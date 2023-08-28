@@ -1,0 +1,43 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add @aws-sdk/util-dynamodb aws-dsk dotenv
+
+PATH: 
+  /Users/robertwidjaja/.rbenv/shims:/Users/robertwidjaja/.rbenv/bin:/Users/robertwidjaja/bin:/usr/local/bin:/Users/robertwidjaja/Library/Android/sdk/platform-tools:/Users/robertwidjaja/Library/Android/sdk/tools/bin:/Users/robertwidjaja/Library/Android/sdk/tools:/Users/robertwidjaja/Library/Android/sdk/emulator:/usr/local/bin:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/robertwidjaja/.rbenv/shims:/Users/robertwidjaja/.rbenv/bin:/Users/robertwidjaja/bin:/Users/robertwidjaja/Library/Android/sdk/platform-tools:/Users/robertwidjaja/Library/Android/sdk/tools/bin:/Users/robertwidjaja/Library/Android/sdk/tools:/Users/robertwidjaja/Library/Android/sdk/emulator:/usr/local/sbin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/robertwidjaja/Projects/Fluttering/flutter/bin:/Users/robertwidjaja/Library/Android/sdk/emulator:/Users/robertwidjaja/Library/Android/sdk/platform-tools:/Users/robertwidjaja/Projects/Fluttering/flutter/bin:/Users/robertwidjaja/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/aws-dsk: Not found
+      at Request.params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "vendor-data",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:Milorph/vendor-data.git",
+    "author": "robert <robertwinstonwidjaja1@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
