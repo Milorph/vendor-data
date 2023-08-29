@@ -1,5 +1,7 @@
+import { marshall } from '@aws-sdk/util-dynamodb';
 import AWS from 'aws-sdk'
 import { AWSRegions } from './types/aws'
+import { Vendor } from './types/twitter';
 
 AWS.config.update({region: AWSRegions.US_EAST_1})
 
@@ -37,6 +39,43 @@ export const dynamodbDescribeTable = async (tableName: string) => {
         return e
       }
       throw new Error(`dynamodbDescribeTable error object unkown type`)
+  }
+
+}
+
+// Delete the table
+export const dynamodbDeleteTable = async (tableName: string) => {
+
+  try {
+    const result = await dynamodb.deleteTable({
+      TableName: tableName
+    }).promise();
+    console.log('Table Deleted', result);
+    return result;
+  } catch(e) {
+      if (e instanceof Error) {
+        throw e
+      }
+      throw new Error(`dynamodbDeleteTable error object unkown type`)
+  }
+
+}
+
+export const dynamodbCreateRecord = async (tableName: string, vendor: Vendor) => {
+
+  try {
+
+      await dynamodb.putItem({
+        TableName:tableName,
+        Item: marshall(vendor)
+      }).promise();
+      console.log('Record Created');
+
+  } catch(e) {
+      if (e instanceof Error) {
+        return e
+      }
+      throw new Error(`dynamodbCreateRecord error object unkown type`)
   }
 
 }
