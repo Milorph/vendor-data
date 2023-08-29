@@ -6,7 +6,7 @@
   "author": "robert <robertwinstonwidjaja1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node \"build/index.js"
+    "start": "tsc && node \"build/index.js\""
   },
   "dependencies": {
     "@aws-sdk/util-dynamodb": "^3.398.0",
